@@ -1,0 +1,27 @@
+body {
+	background-color: pink;
+	font-style: italic;
+	margin-right: 1in;
+	margin-left: 1in
+}
+ul {
+	color: brown;
+	font-style: bold
+}
+table {
+	color: green;
+	font-size: 14pt
+}
+p.odd {
+	color: red;
+	font-size: 18pt
+}
+p.even {
+	color: black;
+	font-size: 10pt
+}
+a {
+	font-size: 12pt;
+	font-family: Arial;
+	color: green
+}
