@@ -5,6 +5,7 @@
 		<!--
 		document.writeln ("Hello World!" + "<br>");
 		document.writeln ("Hello" + "<br>" + "World!");
+		window.alert ("Alert box!");
 		// -->
 	</script>
 	<script type="text/javascript" src="Script/myScript.js"></script>
@@ -14,5 +15,22 @@
 	<button type="button" onclick="hello ()"> Click Muh </button>
 	<button type="button" onclick="bye ()"> Date and Time! </button>
 	<p id=bye> Date&nbspTime </p>
+	<button type="button" onclick="helloConfirm ()"> Delete </button>
+	<p id=confirm>  </p>
+	<script type="text/javascript">
+		var name;
+		name = window.prompt ("Enter your name: ");
+		document.writeln ("Hello " + name + ". Welcome! <br>")
+	</script>
+	<br>
+	<img src="Images/pic_bulboff.gif" id=myImage>
+	<button type="button" onclick="bulbON ()"> Turn on Bulb </button>
+	<button type="button" onclick="bulbOFF ()"> Turn off Bulb </button>
+	<br>
+	<br>
+	<p id=lorip> Labore provident quis fuga sed architecto. Voluptas aut et magni voluptas. Recusandae molestiae earum ut atque in dolorum quam suscipit. </p>
+	<button type="button" onclick="document.getElementById ('lorip').style.fontSize='20px'"> Change Style </button>
+	<button type="button" onclick="document.getElementById ('lorip').style.display='none'"> Hide </button>
+	<button type="button" onclick="document.getElementById ('lorip').style.display='block'"> Show </button>
 </body>
 </html>
