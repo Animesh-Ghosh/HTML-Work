@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title> JavaScript Demo 2 </title>
+</head>
+<body>
+	<p> JavaScript arrays:
+		<span id=arr>  </span>
+		<br/>
+		JavaScript objects:
+		<span id=object>  </span>
+		<br/>
+		<span id=type1>  </span>
+		<span id=type2>  </span>
+		<span id=primdata>  </span>
+		<br/>
+		<span id=compdata>  </span>
+	</p>
+	<script>
+		var cars = ["Saab", "Volvo", "BMW"];
+		var person = {
+			firstName: "John",
+			lastName: "Doe",
+			age: 35,
+		}
+		document.getElementById('arr').innerHTML = cars;
+		// id must be declared beforehand
+		document.getElementById('object').innerHTML = 
+		person.firstName + " " + person.lastName + " is " + 
+		person.age + " years old.";
+		document.getElementById ('type1').innerHTML = 
+		"Type of cars array: " + typeof cars + "<br>";
+		document.getElementById ('type2').innerHTML = 
+		"Type of person object: " + typeof person;
+		document.getElementById ('primdata').innerHTML =
+		typeof "john" + "<br>" + 
+		typeof 3.14 + "<br>" +
+		typeof true + "<br>" +
+		typeof false + "<br>" +
+		typeof x;
+		document.getElementById ('compdata').innerHTML =
+			typeof {name: 'john', age: 34} + "<br>" +
+			typeof [1,2,3,4] + "<br>" +
+			typeof null + "<br>" +
+			typeof function myFunc () {};
+	</script>
+</body>
+</html>
